@@ -13,6 +13,7 @@ function App() {
         backgroundColor: "#dfe6e9",
         width: "100vw",
         height: "100%",
+
         backgroundRepeat: "no-repeat",
       }}
       className="App"
@@ -25,6 +26,9 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
       </BrowserRouter>
+      <footer style={{ marginTop: "20px", padding: "20px" }}>
+        Made with ❤️ using React and Material UI
+      </footer>
     </div>
   );
 }

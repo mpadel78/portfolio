@@ -69,6 +69,7 @@ function Projects() {
                         backgroundColor: "#fafafa",
                         marginBottom: 10,
                         borderRadius: 20,
+                        marginLeft: "30px",
                       }}
                       onClick={() => {
                         setOpen(true);
@@ -78,7 +79,7 @@ function Projects() {
                       <CardMedia
                         component="img"
                         height="100px"
-                        image="https://cdn.iconscout.com/icon/free/png-256/code-language-coding-development-application-project-24615.png"
+                        image={item.iconImage}
                       />
                       <CardContent>
                         <Typography color="primary" variant="h5">
@@ -88,10 +89,6 @@ function Projects() {
                           {item.description}
                         </Typography>
                       </CardContent>
-                      <Button>Demo</Button>
-
-                      <Button>Github</Button>
-                      <Button>Video Demo</Button>
                     </Card>
                   </Grid>
                 ))}

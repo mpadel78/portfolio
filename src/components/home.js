@@ -11,23 +11,25 @@ import profile from "../images/profile.png";
 function Home() {
   return (
     <>
-      <Grid container style={{ padding: "15vh" }}>
-        <Grid item xs={12} sm={12} md={4}>
+      <Grid container style={{ paddingTop: "10vh", height: "100vh" }}>
+        <Grid item xs={1} sm={12} md={4}>
           {/*Just to divide the screen only*/}
         </Grid>
-        <Grid item xs={12} sm={12} md={4}>
+        <Grid item xs={10} sm={12} md={4} style={{ margin: "20px" }}>
           {" "}
           {/*For the middle section occupies the most */}
           <Card
             variant="outlined"
             style={{
+              paddingTop: "50px",
               display: "block",
-              height: "65vh",
-              width: "100%",
+              height: "75vh",
+              width: "90%",
               borderRadius: "20px",
               padding: "1em",
               lineHeight: "1.5em",
               boxShadow: "0px 8px 15px rgba(0, 0, 0, 0.1)",
+              paddingBottom: "20px",
             }}
           >
             <CardMedia
@@ -58,7 +60,7 @@ function Home() {
               variant="contained"
               style={{
                 margin: "20px",
-                width: "20%",
+                width: "30%",
                 background: "#27ae60",
               }}
             >
@@ -72,7 +74,7 @@ function Home() {
 
             <Button
               variant="contained"
-              style={{ margin: "20px", width: "20%", background: "#8e44ad" }}
+              style={{ margin: "20px", width: "30%", background: "#8e44ad" }}
             >
               <Link
                 to="/aboutme"
@@ -81,6 +83,8 @@ function Home() {
                 About Me
               </Link>
             </Button>
+
+            {/*
             <Button
               variant="contained"
               style={{ margin: "20px", width: "20%", background: "#74b9ff" }}
@@ -92,9 +96,11 @@ function Home() {
                 Contact
               </Link>
             </Button>
+
+            */}
           </Card>
         </Grid>
-        <Grid item xs={12} sm={12} md={4}>
+        <Grid item xs={1} sm={12} md={4}>
           {/*Just to divide the screen only*/}
         </Grid>
       </Grid>
